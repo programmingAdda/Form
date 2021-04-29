@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+		<fieldset style="width: 450px;">
+  			<legend>Profile Details</legend>
+  			<div>
+  				<label> First Name </label>
+  				<input type="text" name="firstName" placeholder="Enter first Name" required>
+  			</div><br>
+  			<div>
+  				<label> Last Name </label>
+  				<input type="text" name="lastName" placeholder="Enter last Name" required>
+  			</div><br>
+
+  			<div>
+  				<label> Email </label>
+  				<input type="email" name="email" placeholder="xyz@something.com" required>
+  			</div><br>
+  			<div>
+  				<label> Gender </label>
+  				<select name="gender">
+  					<option value="male" selected>Male</option>
+  					<option value="female" >Female</option>
+  					<option value="other" >Other</option>
+  				</select>
+  			</div>
+  			<br>
+  			<div>
+  				<label>Age</label>
+  				<input type="number" name="age" value="20">
+  			</div><br>
+  			<div>
+  				<label>Birthday</label>
+  				<input type="date" name="birthday">
+  			</div>
+  			<br>
+			<label for="msg">Give us Feedback </label>
+			<textarea  id="msg" cols="50" rows="5"></textarea>
+			<div class="button">
+				<input class="submit-style" type="submit" value="Submit">
+  				<input class="submit-style" type="reset" value="Reset">
+			</div>
+ 		</fieldset>
+	</form>
+</body>
+</html>
